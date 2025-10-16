@@ -1,8 +1,7 @@
+
 # Chrome-Extension
 
 Goals:
-
-
 
 [https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9V](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)[OMT65ahNEri9uqLWfS](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)
 
@@ -21,9 +20,13 @@ we need a manifest.json file to create a chrome extension
 Example of one:
 
 {
+
   "name": "My YT Bookmarks", // whatever name we want
+
   "version": "0.1.0", // can be any version number
+
   "description": "Saving timestamps in YT videos", // whatever we want
+
   "permissions": ["storage", "tabs"],  // will be different, we request access to chrome.storage api and chrome. tabs api
 
 // storage allows stuff to be stored inside the extension
@@ -39,42 +42,73 @@ Example of one:
 // it will have access to the contents of a webpage
 
 // the service worker will be able to speak to our extensione
+
   "background": {
+
     "service_worker": "background.js"
+
   },
 
 //will run the js file in the webpage that we specify
+
   "content_scripts": [
+
     {
 
 // checks if any youtube video is loaded and then loads our content script
-      "matches": ["https://*.youtube.com/*"],
-      "js": ["contentScript.js"]
+
+    "matches": ["https://*.youtube.com/*"],
+
+    "js": ["contentScript.js"]
+
     }
+
   ],
+
   "web_accessible_resources": [
+
     {
-      "resources": [
-        "assets/bookmark.png",
-        "assets/play.png",
-        "assets/delete.png",
-        "assets/save.png"
-      ],
-      "matches": ["https://*.youtube.com/*"]
+
+    "resources": [
+
+    "assets/bookmark.png",
+
+    "assets/play.png",
+
+    "assets/delete.png",
+
+    "assets/save.png"
+
+    ],
+
+    "matches": ["https://*.youtube.com/*"]
+
     }
+
   ],
+
   "action": {
+
     "default_icon": {
-      "16": "assets/ext-icon.png",
-      "24": "assets/ext-icon.png",
-      "32": "assets/ext-icon.png"
+
+    "16": "assets/ext-icon.png",
+
+    "24": "assets/ext-icon.png",
+
+    "32": "assets/ext-icon.png"
+
     },
+
     "default_title": "My YT Bookmarks",
 
 // will specify the UI that shows up
+
     "default_popup": "popup.html"
+
   },
+
   "manifest_version": 3
+
 }
 
 // contents.js file
@@ -160,3 +194,27 @@ const queryParameters = activeTab.
 const URLparameters = new URLSearchPArams
 
 }}))
+
+//
+
+https://developer.chrome.com/docs/extensions/reference/manifest#minimal-manifest
+
+// Manifest file format
+
+// 5 options
+
+// minimal manifest
+
+// register a content script
+
+// injecting a content script
+
+// popup with permissions
+
+// how to have a side panel
+
+// Icons
+
+//
+
+https://developer.chrome.com/docs/extensions/reference/api/action

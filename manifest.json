@@ -1,0 +1,16 @@
+{
+  "name": "Accessibility Helper",
+  "description": "Creates options for making websites more accessible",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["service-worker.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
