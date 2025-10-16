@@ -40,9 +40,9 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("dark_mode_btn");
-  
-const pTags = document.querySelectorAll("p");
-  
+
+ 
+
   button.addEventListener("click", function () {
     // Get the active tab and send message to content script
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
@@ -51,7 +51,4 @@ const pTags = document.querySelectorAll("p");
       }
     });
   });
-
-
-
 });
