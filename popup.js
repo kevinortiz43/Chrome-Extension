@@ -38,7 +38,6 @@
 //   element.style.color = "white";
 // });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("dark_mode_btn");
 
@@ -47,6 +46,30 @@ document.addEventListener("DOMContentLoaded", function () {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       if (tabs[0]) {
         chrome.tabs.sendMessage(tabs[0].id, { action: "dark_mode_on" });
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fontButton = document.getElementById("lexend_font_btn");
+
+  fontButton.addEventListener("click", function () {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      if (tabs[0]) {
+        chrome.tabs.sendMessage(tabs[0].id, { action: "lexend_on" });
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const focusButton = document.getElementById("focus_mode");
+
+  focusButton.addEventListener("click", function () {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      if (tabs[0]) {
+        chrome.tabs.sendMessage(tabs[0].id, { action: "focus_on" });
       }
     });
   });
