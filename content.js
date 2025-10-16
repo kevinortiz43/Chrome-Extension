@@ -65,56 +65,56 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     Array.from(pTags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const h1Tags = document.querySelectorAll("h1");
     Array.from(h1Tags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const aTags = document.querySelectorAll("a");
     Array.from(aTags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const h2Tags = document.querySelectorAll("h2");
     Array.from(h2Tags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const h3Tags = document.querySelectorAll("h3");
     Array.from(h3Tags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const spanTags = document.querySelectorAll("span");
     Array.from(spanTags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const h4Tags = document.querySelectorAll("h4");
     Array.from(h4Tags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
 
     const h5Tags = document.querySelectorAll("h5");
     Array.from(h5Tags).forEach((element) => {
       element.style.fontFamily = "Lexend";
       element.style.fontSize = "larger";
-      //element.style.lineHeight = "2";
+      element.style.lineHeight = "2";
     });
   }
 });
