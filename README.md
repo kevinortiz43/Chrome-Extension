@@ -2,17 +2,6 @@
 
 Goals:
 
-web browser extension
-
-get up
-
-drink water
-
-reading a lot of text easier, highlighting text, scroll along, change font size, line spacig,
-
-anntate something one a website, take snippets on a website.
-
-
 
 
 [https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9V](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)[OMT65ahNEri9uqLWfS](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)
