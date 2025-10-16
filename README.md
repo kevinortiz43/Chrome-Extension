@@ -1,10 +1,25 @@
 # Chrome-Extension
 
-[https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)
+Goals:
+
+web browser extension
+
+get up
+
+drink water
+
+reading a lot of text easier, highlighting text, scroll along, change font size, line spacig,
+
+anntate something one a website, take snippets on a website.
+
+
+
+
+[https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9V](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)[OMT65ahNEri9uqLWfS](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS)
 
 https://developer.chrome.com/docs/extensions/reference/api
 
-Chrome extension api documentation 
+Chrome extension api documentation
 
 https://developer.chrome.com/docs/extensions/reference/api
 
@@ -127,7 +142,6 @@ whateverElementYouWant =document.getElemenstByClassname("")
 
 // [curreNtVideo]:  JSON.stringify([...currentVideoBookmarks,newBookmark.sort)
 
-
 // fetching from chromStorage API based on current youtube video. maybe we can make it so it can grab current webpage
 
 // fetchBookMarks =()=>{
@@ -138,17 +152,13 @@ chrome.storage.syn.get([currentVide),obj =>{
 
 resolve(objj[currentVideo) > JSON.parse(obj)[currentVideo} :[];
 
-
-
 }})
 
 }}
 
 // get the currently focused tab might be useful to get the current focused tab
 
-
 ![1760584556109](image/README/1760584556109.png)
-
 
 // when an html document is loaded
 
@@ -159,10 +169,5 @@ const activeTabe  = await getActiveTabURL();
 const queryParameters = activeTab.
 
 const URLparameters = new URLSearchPArams
-
-
-
-
-
 
 }}))
