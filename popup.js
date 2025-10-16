@@ -38,10 +38,9 @@
 //   element.style.color = "white";
 // });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("dark_mode_btn");
-
- 
 
   button.addEventListener("click", function () {
     // Get the active tab and send message to content script
